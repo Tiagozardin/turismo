@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [defaultHref]="defaultHref"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{poi?.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="poi">
+  <ion-img [src]="poi.imageUrl" alt="{{poi.name}}"></ion-img>
+
+  <ion-list>
+    <ion-item><ion-label>{{poi.city}}</ion-label></ion-item>
+    <ion-item lines="none">
+      <ion-label>{{poi.description || ''}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <div style="padding: 12px; display: flex; gap: 10px">
+    <ion-button expand="block" (click)="openGoogle()"
+      >Abrir no Google Maps</ion-button
+    >
+    <ion-button expand="block" color="tertiary" (click)="openWaze()"
+      >Abrir no Waze</ion-button
+    >
+  </div>
+</ion-content>

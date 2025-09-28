@@ -1,0 +1,39 @@
+[
+  {
+    "id": "cristo-redentor",
+    "region": "sudeste",
+    "name": "Cristo Redentor",
+    "city": "Rio de Janeiro - RJ",
+    "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+    "lat": -22.951916,
+    "lng": -43.210487,
+    "description": "Uma das 7 maravilhas do mundo moderno."
+  },
+  {
+    "id": "ibirapuera",
+    "region": "sudeste",
+    "name": "Parque Ibirapuera",
+    "city": "São Paulo - SP",
+    "imageUrl": "https://images.unsplash.com/photo-1526401485004-2fda9f4c63f3",
+    "lat": -23.587416,
+    "lng": -46.657634
+  },
+  {
+    "id": "pelourinho",
+    "region": "nordeste",
+    "name": "Pelourinho",
+    "city": "Salvador - BA",
+    "imageUrl": "https://images.unsplash.com/photo-1589998059171-988d887df646",
+    "lat": -12.971111,
+    "lng": -38.510833
+  },
+  {
+    "id": "cataratas",
+    "region": "sul",
+    "name": "Cataratas do Iguaçu",
+    "city": "Foz do Iguaçu - PR",
+    "imageUrl": "https://images.unsplash.com/photo-1583267748057-6f8f3b4c9c3f",
+    "lat": -25.695278,
+    "lng": -54.436667
+  }
+]

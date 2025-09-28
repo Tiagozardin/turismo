@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Escolha a região</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item button *ngFor="let r of regions" (click)="open(r)">
+      <ion-label class="ion-text-capitalize">{{ r.replace('-', ' ') }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
