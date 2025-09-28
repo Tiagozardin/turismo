@@ -10,7 +10,7 @@ import { NgIf } from '@angular/common';
   standalone: true,
   selector: 'app-poi-detail',
   templateUrl: './poi-detail.page.html',
-   imports: [
+  imports: [
     IonHeader, IonToolbar, IonTitle, IonContent, IonImg,
     IonList, IonItem, IonLabel, IonButton, IonButtons, IonBackButton, NgIf
   ]
@@ -30,4 +30,9 @@ export class PoiDetailPage implements OnInit {
   }
   openGoogle() { if (this.poi) this.maps.openGoogleMaps(this.poi.lat, this.poi.lng); }
   openWaze() { if (this.poi) this.maps.openWaze(this.poi.lat, this.poi.lng); }
+  openSite() {
+    if (this.poi?.website) {
+      window.open(this.poi.website, '_blank');
+    }
+  }
 }

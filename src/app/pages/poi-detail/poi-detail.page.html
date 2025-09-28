@@ -12,12 +12,27 @@
 
   <ion-list>
     <ion-item><ion-label>{{poi.city}}</ion-label></ion-item>
-    <ion-item lines="none">
+    <ion-item>
       <ion-label>{{poi.description || ''}}</ion-label>
+    </ion-item>
+    <ion-item *ngIf="poi?.category">
+      <ion-label>Categoria: {{ poi?.category }}</ion-label>
+    </ion-item>
+    <ion-item *ngIf="poi?.openingHours">
+      <ion-label>Horários: {{ poi?.openingHours }}</ion-label>
+    </ion-item>
+    <ion-item *ngIf="poi?.priceRange">
+      <ion-label>Preço: {{ poi?.priceRange }}</ion-label>
+    </ion-item>
+    <ion-item *ngIf="poi?.website">
+      <ion-label>Site oficial</ion-label>
+      <ion-button slot="end" fill="outline" (click)="openSite()"
+        >Abrir</ion-button
+      >
     </ion-item>
   </ion-list>
 
-  <div style="padding: 12px; display: flex; gap: 10px">
+  <div style="padding: 12px; display: flex; gap: 10px; justify-content: center; ">
     <ion-button expand="block" (click)="openGoogle()"
       >Abrir no Google Maps</ion-button
     >

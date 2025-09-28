@@ -1,5 +1,7 @@
 export type RegionCode = 'sul' | 'sudeste' | 'nordeste' | 'centro-oeste' | 'norte';
 
+export type PriceRange = 'grátis' | 'pago' | 'misto';
+
 export interface Poi {
   id: string;
   region: RegionCode;
@@ -9,4 +11,8 @@ export interface Poi {
   lat: number;
   lng: number;
   description?: string;
+  category?: string;
+  openingHours?: string;
+  priceRange?: PriceRange;
+  website?: string;
 }
