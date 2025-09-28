@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Turismo</string>
+    <string name="title_activity_main">Turismo</string>
+    <string name="package_name">com.tiagozardin.turismo</string>
+    <string name="custom_url_scheme">com.tiagozardin.turismo</string>
+</resources>
