@@ -1,0 +1,43 @@
+.intro {
+  --background: radial-gradient(1200px 800px at 10% -10%, #0b1020, #0a0d18 40%, #070a12 100%);
+
+  .center {
+    height: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    gap: 16px;
+    color: #e5e7eb;
+    animation: fadeIn .6s ease both;
+  }
+
+  .logo {
+    width: 140px;
+    height: 140px;
+    filter: drop-shadow(0 12px 24px rgba(0,0,0,.35));
+    animation: float 3s ease-in-out infinite;
+  }
+
+  h1 {
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: .5px;
+    color: #fff;
+  }
+
+  p {
+    margin: 0 24px 8px;
+    opacity: .8;
+  }
+
+  .cta {
+    --border-radius: 14px;
+    --background: linear-gradient(135deg, #34A853 0%, #4285F4 100%);
+    --box-shadow: 0 10px 24px rgba(0,0,0,.25);
+    font-weight: 700;
+    padding: 0 18px;
+  }
+}
+
+@keyframes fadeIn { from {opacity:0; transform: translateY(6px)} to {opacity:1; transform:none} }
+@keyframes float { 0%,100% { transform: translateY(0)} 50% { transform: translateY(-6px)} }
