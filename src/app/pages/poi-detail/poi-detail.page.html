@@ -32,12 +32,15 @@
     </ion-item>
   </ion-list>
 
-  <div style="padding: 12px; display: flex; gap: 10px; justify-content: center; ">
-    <ion-button expand="block" (click)="openGoogle()"
-      >Abrir no Google Maps</ion-button
-    >
-    <ion-button expand="block" color="tertiary" (click)="openWaze()"
-      >Abrir no Waze</ion-button
-    >
+  <div style="padding: 12px; display: flex; gap: 10px; justify-content: center">
+    <ion-button style="flex:1" (click)="openGoogle()">
+      <ion-icon slot="start" [src]="'assets/icon/google-maps.svg'"></ion-icon>
+      Google Maps
+    </ion-button>
+
+    <ion-button style="flex:1" (click)="openWaze()">
+      <ion-icon slot="start" [src]="'assets/icon/waze.svg'"></ion-icon>
+      Waze
+    </ion-button>
   </div>
 </ion-content>
